@@ -2,20 +2,108 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+.Header
+{
+position: absolute;
+width: 1440px;
+height: 100px;
+left: 0px;
+top: 0px;
 }
+/* .Peach{ 
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+width: 643px;
+height: 443px;
+left: 739px;
+top: calc(50% - 443px/2 - 1943px);
+} */
+.cart {
+    position: relative;
   }
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
+  
+  .cart-button {
+    background-color: #0070f3;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 200px;
+    z-index: 1000;
+  }
+  
+  .dropdown ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .dropdown li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .dropdown li:last-child {
+    border-bottom: none;
+  }
+  /* styles.css */
+.cart {
+    position: relative;
+  }
+  
+  .cart-button {
+    background-color: #0070f3;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 250px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dropdown ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .dropdown li {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .dropdown li:last-child {
+    border-bottom: none;
+  }
+  
+  .checkout-button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px;
+    border: none;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
